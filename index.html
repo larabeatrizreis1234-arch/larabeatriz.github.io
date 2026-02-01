@@ -1,0 +1,168 @@
+# larabeatriz.github.io
+Site especial
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Para Cauã 🤍</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonte delicada -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Poppins:300,400&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      background: #fdecef;
+      color: #4a2c2a;
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 50px 20px;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-weight: normal;
+      margin-bottom: 35px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+    .photo {
+      margin: 45px 0;
+    }
+
+    .photo img {
+      width: 100%;
+      border-radius: 16px;
+    }
+
+    .caption {
+      margin-top: 14px;
+      font-size: 16px;
+      color: #6b3e3b;
+    }
+
+    footer {
+      margin-top: 70px;
+      font-size: 15px;
+      color: #7a4a47;
+    }
+
+    audio {
+      margin: 35px 0;
+      width: 100%;
+    }
+
+    /* Corações */
+    .heart {
+      position: fixed;
+      top: -10px;
+      font-size: 18px;
+      color: rgba(255, 182, 193, 0.6);
+      animation: fall linear infinite;
+      z-index: 1;
+    }
+
+    @keyframes fall {
+      from {
+        transform: translateY(-10px);
+      }
+      to {
+        transform: translateY(110vh);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Corações -->
+  <script>
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.innerHTML = "♡";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = (6 + Math.random() * 6) + "s";
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 12000);
+    }
+
+    setInterval(createHeart, 600);
+  </script>
+
+  <div class="container">
+
+    <h1>Para você, Cauã 🤍</h1>
+
+    <p>
+      Às vezes eu estou sem fazer nada e fico pensando como a vida é uma loucura.
+      Você apareceu do nada e hoje é a pessoa mais especial da minha vida,
+      meu primeiro namorado e quem mais me faz feliz.
+      <br><br>
+      Acho engraçado quando você fala que eu não te amo,
+      que eu te odeio, que eu sou seu amor platônico,
+      sendo que se você soubesse 1% do que eu sinto,
+      pensaria: “meu Deus, que menina besta apaixonada”.
+      <br><br>
+      Aquelas nossas conversas longas de madrugada,
+      as risadas que você me arrancava,
+      isso me apaixonava todos os dias mais.
+      Seu abraço é a coisa mais gostosa que eu já senti.
+      Eu poderia te abraçar, beijar e te cheirar todos os dias da minha vida
+      que nunca enjoaria.
+      <br><br>
+      Mesmo te conhecendo há um bom tempo,
+      ainda sinto o mesmo frio na barriga,
+      como se estivesse me apaixonando de novo,
+      todos os dias.
+    </p>
+
+    <audio controls>
+      <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="photo">
+      <img src="foto1.jpg">
+      <div class="caption">Eu dormindo em você. Meu lugar mais seguro do mundo.</div>
+    </div>
+
+    <div class="photo">
+      <img src="foto2.jpg">
+      <div class="caption">Sempre gostei dos meus olhos. Até gostar dos seus.</div>
+    </div>
+
+    <div class="photo">
+      <img src="foto3.jpg">
+      <div class="caption">Você e o pôr do sol. Duas coisas que eu amo.</div>
+    </div>
+
+    <div class="photo">
+      <img src="foto4.jpg">
+      <div class="caption">Meu jeito favorito de demonstrar amor: um beijo, sem dizer uma palavra.</div>
+    </div>
+
+    <footer>
+      Com amor,<br>
+      Lara Beatriz 🤍
+    </footer>
+
+  </div>
+</body>
+</html>
